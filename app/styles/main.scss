@@ -41,6 +41,34 @@ body {
 }
 
 /* Custom page footer */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #000;
+  color: #FFF;
+.text-muted {
+  color: #FFF;
+}
+div.action {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+  left: 0;
+  text-align: right;
+  i {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 25px;
+  }
+}
+}
 .footer {
   // padding-top: 19px;
   background-color: #FFF;
@@ -78,27 +106,57 @@ body {
   }
 }
 
+.middle {
+  position: fixed;
+  top: 50px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  .list {
+    .row {
+      margin: 0;
+      height: 50px;
+      overflow: hidden;
+      border-bottom: 1px solid #eee;
+      .col-xs-8 {
+        padding-top: 5px;
+        h4, p {
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .col-xs-2.no-padding {
+        padding: 0;
+        i {
+          display: block;
+        }
+        .four {
+          width: 40px;
+          display: inline-block;
+          background-color: green;
+          margin: 0;
+          padding:0;
+          font-size: 0;
+          margin-top: 4px;
+          img {
+            height: 20px;
+            width: 20px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: #ccc;
+          }
+        }
+      }
+    }
+  }
+}
+
 .container-narrow > hr {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
